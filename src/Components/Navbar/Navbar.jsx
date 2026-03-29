@@ -1,7 +1,7 @@
 import React from "react";
 import ShoppingCartIMG from "../../assets/products/shopping-cart.png";
 
-const Navbar = () => {
+const Navbar = ({cart}) => {
   return (
     <div>
       <div className="navbar bg-base-100 shadow-sm md:px-10 items-center">
@@ -96,7 +96,7 @@ const Navbar = () => {
               alt=""
             />
             <h3 className="text-white text-[10px] font-bold bg-red-600 p-1 px-2 rounded-full absolute -top-3 -right-2">
-              0
+              {cart.length}
             </h3>
           </div>
           <h1 className="font-semibold cursor-pointer">Login</h1>
