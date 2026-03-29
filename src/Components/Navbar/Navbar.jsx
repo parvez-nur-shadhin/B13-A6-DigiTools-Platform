@@ -95,7 +95,7 @@ const Navbar = ({cart}) => {
               src={ShoppingCartIMG}
               alt=""
             />
-            <h3 className="text-white text-[10px] font-bold bg-red-600 p-1 px-2 rounded-full absolute -top-3 -right-2">
+            <h3 className={`text-white text-[10px] font-bold bg-red-600 p-1 px-2 rounded-full absolute -top-3 -right-2 ${cart.length === 0 ? "hidden" : ""}`}>
               {cart.length}
             </h3>
           </div>
