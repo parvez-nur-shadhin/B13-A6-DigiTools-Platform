@@ -8,7 +8,7 @@ const GetStarted = () => {
         <div className='bg-[#F9FAFC] max-w-400 mx-auto py-30 mt-30'>
             <h1 className='text-center font-extrabold text-[3rem]'>Get Started in 3 Steps</h1>
             <p className='text-[#627382] text-center'>Start using premium digital tools in minutes, not hours.</p>
-            <div className='max-w-300 mx-auto grid gap-5 grid-cols-3 mt-10'>
+            <div className='max-w-300 mx-auto grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10'>
 
             <div className='relative'>
                 <div className='bg-white p-6 border border-gray-200 rounded-lg shadow-lg'>

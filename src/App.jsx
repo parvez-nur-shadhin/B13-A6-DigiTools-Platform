@@ -7,6 +7,7 @@ import Products from "./Components/Products/Products";
 import Cart from "./Components/Cart/Cart";
 import GetStarted from "./Components/GetStarted/GetStarted";
 import TransparentPricing from "./Components/TransparentPricing/TransparentPricing";
+import Workflow from "./Components/Workflow/Workflow";
 
 const fetchTools = async () => {
   const res = await fetch("/data.json");
@@ -77,6 +78,7 @@ function App() {
 
       <GetStarted />
       <TransparentPricing/>
+      <Workflow />
     </>
   );
 }
