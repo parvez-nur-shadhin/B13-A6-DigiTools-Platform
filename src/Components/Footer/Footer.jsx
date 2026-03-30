@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
         <div>
             <h1 className="font-semibold text-2xl">Social Links</h1>
-            <div className="flex gap-3 items-center justify-start mt-4">
+            <div className="flex gap-3 items-center justify-center md:justify-start mt-4">
                 <img className="cursor-pointer" src={InstagramIMG} alt="" />
                 <img className="cursor-pointer" src={FacebookIMG} alt="" />
                 <img className="cursor-pointer" src={TwitterIMG} alt="" />
@@ -52,8 +52,8 @@ const Footer = () => {
         </div>
       </div>
       {/* Lower */}
-      <div className="max-w-300 mx-auto text-[#FAFAFA] opacity-60 flex justify-between mt-15 border-t border-gray-300 pt-4">
-        <h4>© 2026 Digitools. All rights reserved.</h4>
+      <div className="max-w-300 mx-auto text-[#FAFAFA] opacity-60 flex flex-col md:flex-row justify-center md:justify-between mt-15 border-t border-gray-300 pt-4">
+        <h4 className="text-center md:text-start">© 2026 Digitools. All rights reserved.</h4>
         <ul className="flex items-center justify-center gap-5">
             <li><a href="">Privacy Policy</a></li>
             <li><a href="">Terms of Service</a></li>

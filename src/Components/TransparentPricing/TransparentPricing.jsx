@@ -2,7 +2,7 @@ import React from "react";
 
 const TransparentPricing = () => {
   return (
-    <div className="max-w-300 mx-auto py-30">
+    <div className="max-w-300 mx-auto py-10 md:py-30">
       <h1 className="text-[3rem] text-center text-[#101727] font-bold">
         Simple, Transparent Pricing
       </h1>
