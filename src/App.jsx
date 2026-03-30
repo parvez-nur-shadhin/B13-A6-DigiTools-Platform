@@ -8,6 +8,7 @@ import Cart from "./Components/Cart/Cart";
 import GetStarted from "./Components/GetStarted/GetStarted";
 import TransparentPricing from "./Components/TransparentPricing/TransparentPricing";
 import Workflow from "./Components/Workflow/Workflow";
+import Footer from "./Components/Footer/Footer";
 
 const fetchTools = async () => {
   const res = await fetch("/data.json");
@@ -79,6 +80,7 @@ function App() {
       <GetStarted />
       <TransparentPricing/>
       <Workflow />
+      <Footer/>
     </>
   );
 }
