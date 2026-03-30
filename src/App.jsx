@@ -5,6 +5,8 @@ import ActiveUsersInfo from "./Components/ActiveUsersInfo/ActiveUsersInfo";
 import Banner from "./Components/Banner/Banner";
 import Products from "./Components/Products/Products";
 import Cart from "./Components/Cart/Cart";
+import GetStarted from "./Components/GetStarted/GetStarted";
+import TransparentPricing from "./Components/TransparentPricing/TransparentPricing";
 
 const fetchTools = async () => {
   const res = await fetch("/data.json");
@@ -72,6 +74,9 @@ function App() {
       ) : (
         <Cart cart={cart} setCart={setCart} />
       )}
+
+      <GetStarted />
+      <TransparentPricing/>
     </>
   );
 }
