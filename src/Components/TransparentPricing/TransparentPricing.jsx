@@ -11,7 +11,7 @@ const TransparentPricing = () => {
       </p>
       <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch mt-8">
         {/* Card 1 */}
-        <div className="card  bg-base-100 shadow-sm h-full">
+        <div className="card  bg-[#F9FAFC] shadow-sm h-full">
           <div className="card-body flex flex-col h-full">
             <div className="flex flex-col justify-start gap-3">
               <div>
@@ -216,7 +216,7 @@ const TransparentPricing = () => {
           </div>
         </div>
         {/* Card 3 */}
-        <div className="card  bg-base-100 shadow-sm h-full">
+        <div className="card  bg-[#F9FAFC] shadow-sm h-full">
           <div className="card-body flex flex-col h-full">
             <div className="flex flex-col justify-start gap-3">
               <div>

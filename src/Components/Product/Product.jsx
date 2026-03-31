@@ -1,6 +1,7 @@
 import React from "react";
 import VectorPNG from "../../assets/vector.png";
 import { toast } from "react-toastify";
+import { Check } from "lucide-react";
 
 const Product = ({ tool, cart, setCart }) => {
   // {
@@ -21,6 +22,23 @@ const Product = ({ tool, cart, setCart }) => {
 
   const isAdded = cart.some((item) => item.id === tool.id);
 
+  const tagConfig = {
+      new: {
+        "name": "New",
+        className: "font-semibold text-sm bg-[#DBFCE7] text-green-600 py-1.5 shadow-md px-3 rounded-full absolute right-4"
+      },
+      "best-seller": {
+        name: "Best Seller",
+        className: "font-semibold text-sm bg-[#fef3c6] text-[#BB4D00] py-1.5 shadow-md px-3 rounded-full absolute right-4"
+      },
+      "popular": {
+        name: "Popular",
+        className: "font-semibold text-sm bg-[#E1E7FF] text-[#9216fa] py-1.5 shadow-md px-3 rounded-full absolute right-4"
+      }
+  }
+  const tagOBJ = tagConfig[tool.tagType];
+
+  console.log(tagOBJ.className);
   const handleBuyNow = () => {
     console.log(isAdded);
 
@@ -30,10 +48,11 @@ const Product = ({ tool, cart, setCart }) => {
   };
 
   return (
-    <div className="p-4 space-y-4 border border-gray-400 rounded-4xl h-full overflow-hidden shadow-lg transform duration-600 hover:scale-105">
-      <div>
+    <div className="p-4 space-y-4 border border-gray-400 rounded-4xl h-full overflow-hidden shadow-lg transform duration-600 hover:scale-105 relative">
+      <span className={tagOBJ.className}>{tagOBJ.name}</span>
+      <div className="p-4 border border-gray-400 rounded-full inline-block">
         <img
-          className="p-4 rounded-full border border-gray-400"
+          className="w-8 h-8 object-contain"
           src={tool.icon}
           alt=""
         />
@@ -56,7 +75,11 @@ const Product = ({ tool, cart, setCart }) => {
         className={`btn bg-primary w-full rounded-full text-white ${isAdded ? "bg-success text-white" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA]"} disabled:bg-success disabled:cursor-pointer`}
         disabled={isAdded}
       >
-        {isAdded ? "Added To Cart" : "Buy Now"}
+        {isAdded ? (
+          <>
+          {<Check/>} Added To Cart
+          </>
+          ) : "Buy Now"}
       </button>
     </div>
   );

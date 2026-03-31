@@ -18,10 +18,10 @@ const Footer = () => {
         <div>
             <h1 className="font-semibold text-2xl">Products</h1>
             <ul className="font-light space-y-3 mt-2">
-                <li>Features</li>
-                <li>Pricing</li>
-                <li>Templates</li>
-                <li>Integration</li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Templates</a></li>
+                <li><a href="">Integration</a></li>
             </ul>
         </div>
         <div>
