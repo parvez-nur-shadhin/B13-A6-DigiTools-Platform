@@ -35,14 +35,6 @@ Remove items from the cart instantly with smooth UI updates.
 
 Dynamic buttons that update based on cart state (e.g., add/remove, selected status), improving user interaction and experience.
 
-## 📸 Preview
-
-*Add screenshots or demo GIFs here to showcase your platform.*
-![Homepage](./src/assets/ScreenShots/homepage.png)
-![Products](./src/assets/ScreenShots/products.png)
-![Cart](./src/assets/ScreenShots/cart.png)
-
-
 ## 💡 Author
 
 Made with ❤️ by **Parvez Nur Shadhin**
